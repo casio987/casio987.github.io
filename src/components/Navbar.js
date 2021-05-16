@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { NavLink }  from 'react-router-dom';
 
 const Nav = styled.nav`
-    background-color: white;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -19,7 +18,7 @@ const NavbarContainer = styled.div`
     justify-content: center;
     align-item: center;
     width: 100%;
-    heigh:80px;
+    height: 80px;
     max-width: 1500px;
 `;
 
@@ -28,11 +27,13 @@ const NavbarMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: 2rem;
+    text-decoration: none;
 `;
 
 const NavItem = styled.li`
     line_height: 40px;
     margin-right: 1rem;
+
     &:after {
         content: "";
         display: block;
@@ -45,14 +46,19 @@ const NavItem = styled.li`
         width: 100%;
         background: #ffdd40;
     }
+
+    .norm {
+        text-decoration: none; 
+        color: black;
+        padding: 0.5rem 1rem;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+    }
+
     .active {
         color: #ffdd40;
-        border: 1px solid #ffdd40;
     }
 `;
-
-
-
 
 
 
@@ -62,12 +68,12 @@ function Navbar() {
             <NavbarContainer>
                 <NavbarMenu>
                     <NavItem>
-                        <NavLink exact to="/">
+                        <NavLink exact to="/" activeClassName='active' className="norm">
                             Home
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink exact to="/about">
+                        <NavLink exact to="/about" activeClassName='active' className="norm">
                             About
                         </NavLink>
                     </NavItem>
