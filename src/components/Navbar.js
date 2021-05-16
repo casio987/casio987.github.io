@@ -44,7 +44,7 @@ const NavItem = styled.li`
     }
     &:hover:after {
         width: 100%;
-        background: #ffdd40;
+        background: #4d52db;
     }
 
     .norm {
@@ -56,7 +56,8 @@ const NavItem = styled.li`
     }
 
     .active {
-        color: #ffdd40;
+        color: #4d52db;
+        font-weight: bold;
     }
 `;
 
