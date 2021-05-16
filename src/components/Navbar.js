@@ -15,7 +15,7 @@ const Nav = styled.nav`
 
 const NavbarContainer = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-item: center;
     width: 100%;
     height: 80px;
@@ -27,7 +27,6 @@ const NavbarMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: 2rem;
-    text-decoration: none;
 `;
 
 const NavItem = styled.li`
