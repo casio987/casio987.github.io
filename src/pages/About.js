@@ -11,27 +11,41 @@ const AboutContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+
 `;
 
 const InfoHolder = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 200px;
+    align-items: center;
+    margin-top: 150px;
     gap: 4rem;
+        
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const TextHolder = styled.div`
     display: flex;
     flex-direction: column;
-    width: 800px;
-    font-size: 0.85rem; 
+    width: 500px;
+    font-size: 12.5px; 
 `;
 
 const Image = styled.img`
     width: 250px;
     height: 250px;
     border-radius: 100px;  
+    @media (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const ytList = [ 
@@ -44,9 +58,11 @@ const ytList = [
 
 const WaveAnimation = keyframes`${swing}`;
 const Text = styled.h2`
+    box-sizing: border-box;
     text-align: left;
     color: #3e3f41;
-
+    display: inline;
+    white-space: wrap
     .wave {
         animation: 1.5s ${WaveAnimation};
         display: inline-block;

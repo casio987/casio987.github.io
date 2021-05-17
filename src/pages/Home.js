@@ -12,6 +12,11 @@ const HomeContainer = styled.div`
     align-items: center;
     margin-top: 75px;
     color: #3e3f41;
+    
+    @media (max-height: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
 `;
 
 const ProfileAnimation = keyframes`${tada}`;
@@ -21,6 +26,16 @@ const Profile = styled.img`
     width: 240px;
     height: 240px;  
 `;
+
+const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media (max-height: 768px) {
+        margin-left: 30px;
+    }
+`; 
+
 
 const GreetingAnimation = keyframes`${shake}`;
 const Greeting = styled.h1`
@@ -44,9 +59,11 @@ function Home() {
     return (
         <HomeContainer>
             <Profile src={Tb}/>
-            <Greeting>Hi!</Greeting>
-            <Meme>My name Jeff</Meme>
-            <Info>CS @ UNSW</Info>
+            <TextContainer>
+                <Greeting>Hi!</Greeting>
+                <Meme>My name Jeff</Meme>
+                <Info>CS @ UNSW</Info>
+                </TextContainer>
         </HomeContainer>
     )
 }
