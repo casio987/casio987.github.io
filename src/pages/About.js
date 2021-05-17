@@ -11,7 +11,6 @@ const AboutContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-
 `;
 
 const InfoHolder = styled.div`
@@ -54,15 +53,13 @@ const ytList = [
     "https://www.youtube.com/watch?v=KmDYXaaT9sA&ab_channel=TeamCoco",
     "https://www.youtube.com/watch?v=MpzWxMFtFRU&t=315s&ab_channel=MarcChee",
     "https://www.youtube.com/watch?v=qzpxWtDMIME&ab_channel=Lordramza76",
+    "https://www.youtube.com/watch?v=nMouIB-L8Nc&ab_channel=TeamCoco",
 ];
 
 const WaveAnimation = keyframes`${swing}`;
 const Text = styled.h2`
-    box-sizing: border-box;
     text-align: left;
     color: #3e3f41;
-    display: inline;
-    white-space: wrap
     .wave {
         animation: 1.5s ${WaveAnimation};
         display: inline-block;

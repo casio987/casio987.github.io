@@ -63,7 +63,7 @@ function Home() {
                 <Greeting>Hi!</Greeting>
                 <Meme>My name Jeff</Meme>
                 <Info>CS @ UNSW</Info>
-                </TextContainer>
+            </TextContainer>
         </HomeContainer>
     )
 }
