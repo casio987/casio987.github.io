@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Tb from '../assets/tb.jpg'
 import { fadeIn, swing } from 'react-animations';
@@ -41,7 +41,7 @@ const ytList = [
     "https://www.youtube.com/watch?v=MpzWxMFtFRU&t=315s&ab_channel=MarcChee",
     "https://www.youtube.com/watch?v=qzpxWtDMIME&ab_channel=Lordramza76",
 ];
-const randomYoutubeVid = ytList[Math.floor(Math.random() * ytList.length)];
+
 const WaveAnimation = keyframes`${swing}`;
 const Text = styled.h2`
     text-align: left;
@@ -63,6 +63,11 @@ const Text = styled.h2`
 
 
 function About() {
+    // used to access index of 'random' youtube vids
+    const [randomNum, setRandomNum] = useState(0);
+    const randomYoutubeVid = ytList[randomNum];
+
+    console.log(randomNum);
     return (
         <AboutContainer>
             <InfoHolder>
@@ -75,7 +80,7 @@ function About() {
                         I'm interested in anything tech, with web dev and shell scripting being my more recent undertakings
                     </Text>
                     <Text>
-                        If I'm not beep booping my way through code, you can find me spending too much time on <a href={ randomYoutubeVid } className="youtube" target="_blank" rel="noreferrer">Youtube</a>, 
+                        If I'm not beep booping my way through code, you can find me spending too much time on <a href={ randomYoutubeVid } onClick={() => setRandomNum(Math.floor(Math.random() * ytList.length))} className="youtube" target="_blank" rel="noreferrer">Youtube</a>, 
                         pumping iron, stuffing my face or lurking in the <a href="https://bit.ly/CSESocDiscord" className="discord" target="_blank" rel="noreferrer">CSESoc Discord server</a>.
                     </Text>
                 </TextHolder>
