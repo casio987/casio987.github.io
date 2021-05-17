@@ -69,12 +69,12 @@ function Navbar() {
                 <NavbarMenu>
                     <NavItem>
                         <NavLink exact to="/" activeClassName='active' className="norm">
-                            Home
+                            .home()
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink exact to="/about" activeClassName='active' className="norm">
-                            About
+                            .about()
                         </NavLink>
                     </NavItem>
                 </NavbarMenu>
