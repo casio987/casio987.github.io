@@ -34,6 +34,7 @@ const TextHolder = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 12.5px; 
+    justify-content: center;
 `;
 
 const Image = styled.img`
