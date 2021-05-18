@@ -54,6 +54,7 @@ const ytList = [
     "https://www.youtube.com/watch?v=MpzWxMFtFRU&t=315s&ab_channel=MarcChee",
     "https://www.youtube.com/watch?v=qzpxWtDMIME&ab_channel=Lordramza76",
     "https://www.youtube.com/watch?v=nMouIB-L8Nc&ab_channel=TeamCoco",
+    "https://www.youtube.com/watch?v=gCVZIpxUEhg&ab_channel=HarvardUniversity",
 ];
 
 const WaveAnimation = keyframes`${swing}`;

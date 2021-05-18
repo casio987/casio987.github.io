@@ -77,6 +77,16 @@ function Navbar() {
                             .about()
                         </NavLink>
                     </NavItem>
+                    <NavItem>
+                        <NavLink exact to="/resume" activeClassName='active' className="norm">
+                            .resume()
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink exact to="/projects" activeClassName='active' className="norm">
+                            .projects()
+                        </NavLink>
+                    </NavItem>
                 </NavbarMenu>
             </NavbarContainer>
         </Nav>
