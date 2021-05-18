@@ -69,10 +69,16 @@ const Text = styled.h2`
     .youtube {
         text-decoration: none;
         color: #FF0000;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     .discord {
         text-decoration: none;
         color: #738ADB;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 `;
 
