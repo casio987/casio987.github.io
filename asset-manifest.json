@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.b0f2d1a9.chunk.css",
+    "main.js": "/personal-website/static/js/main.0b8151ab.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.0b8151ab.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.3d84d84c.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.3d84d84c.js.map",
+    "static/js/2.2cdefbe4.chunk.js": "/personal-website/static/js/2.2cdefbe4.chunk.js",
+    "static/js/2.2cdefbe4.chunk.js.map": "/personal-website/static/js/2.2cdefbe4.chunk.js.map",
+    "static/js/3.a6b0e8a2.chunk.js": "/personal-website/static/js/3.a6b0e8a2.chunk.js",
+    "static/js/3.a6b0e8a2.chunk.js.map": "/personal-website/static/js/3.a6b0e8a2.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/main.b0f2d1a9.chunk.css.map": "/personal-website/static/css/main.b0f2d1a9.chunk.css.map",
+    "static/js/2.2cdefbe4.chunk.js.LICENSE.txt": "/personal-website/static/js/2.2cdefbe4.chunk.js.LICENSE.txt",
+    "static/media/github.04be58c1.svg": "/personal-website/static/media/github.04be58c1.svg",
+    "static/media/gmail.bbfe19dc.svg": "/personal-website/static/media/gmail.bbfe19dc.svg",
+    "static/media/linkedin.27a3f479.svg": "/personal-website/static/media/linkedin.27a3f479.svg",
+    "static/media/tb.4335bde8.jpg": "/personal-website/static/media/tb.4335bde8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d84d84c.js",
+    "static/js/2.2cdefbe4.chunk.js",
+    "static/css/main.b0f2d1a9.chunk.css",
+    "static/js/main.0b8151ab.chunk.js"
+  ]
+}
