@@ -15,6 +15,10 @@ const FooterBar = styled.div`
     bottom: 0;
     width: 100%;
     gap: 2rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const ImageLink = styled.a`

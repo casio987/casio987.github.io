@@ -17,6 +17,7 @@ const InfoHolder = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: 150px;
     margin-left: 100px;
     margin-right: 100px;
