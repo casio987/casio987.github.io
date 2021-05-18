@@ -17,13 +17,15 @@ const InfoHolder = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     gap: 4rem;
         
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 `;
@@ -31,7 +33,6 @@ const InfoHolder = styled.div`
 const TextHolder = styled.div`
     display: flex;
     flex-direction: column;
-    width: 500px;
     font-size: 12.5px; 
 `;
 
@@ -42,8 +43,6 @@ const Image = styled.img`
     @media (max-width: 960px) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 `;
 
@@ -80,7 +79,7 @@ function About() {
     const [randomNum, setRandomNum] = useState(0);
     const randomYoutubeVid = ytList[randomNum];
 
-    console.log(randomNum);
+    // console.log(randomNum);
     return (
         <AboutContainer>
             <InfoHolder>
