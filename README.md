@@ -1,3 +1,8 @@
 # Sunny's Personal Website
 
-Check ouy my site @ [https://casio987.github.io](https://casio987.github.io/personal-website/).
+Check out my site @ [https://casio987.github.io](https://casio987.github.io/personal-website/).
+
+Future Modifications?
+- update projects page
+- add responsiveness to navbar
+- dark mode when?
