@@ -61,7 +61,7 @@ function Home() {
             <Profile src={Tb}/>
             <TextContainer>
                 <Greeting>Hi!</Greeting>
-                <Meme>My name Jeff</Meme>
+                <Meme>I'm Sunny</Meme>
                 <Info>CS @ UNSW</Info>
             </TextContainer>
         </HomeContainer>
