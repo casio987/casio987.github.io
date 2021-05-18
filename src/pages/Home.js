@@ -4,8 +4,8 @@ import Tb from '../assets/tb.jpg'
 import { tada, shake } from 'react-animations';
 
 const HomeContainer = styled.div`
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
