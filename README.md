@@ -1,6 +1,6 @@
 # Sunny's Personal Website
 
-Check out my site [here](casio987.github.io).
+Check out my site [here](https://casio987.github.io/).
 
 Future Modifications?
 - update projects page
