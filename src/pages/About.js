@@ -19,8 +19,8 @@ const InfoHolder = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     gap: 4rem;
         
     @media (max-width: 768px) {
@@ -53,7 +53,6 @@ const ytList = [
     "https://www.youtube.com/watch?v=xb-rb35ZzTQ&t=2711s&ab_channel=CSESoc",
     "https://www.youtube.com/watch?v=KmDYXaaT9sA&ab_channel=TeamCoco",
     "https://www.youtube.com/watch?v=MpzWxMFtFRU&t=315s&ab_channel=MarcChee",
-    "https://www.youtube.com/watch?v=qzpxWtDMIME&ab_channel=Lordramza76",
     "https://www.youtube.com/watch?v=nMouIB-L8Nc&ab_channel=TeamCoco",
     "https://www.youtube.com/watch?v=gCVZIpxUEhg&ab_channel=HarvardUniversity",
 ];
@@ -102,7 +101,7 @@ function About() {
                     </Text>
                     <Text>
                         If I'm not beep booping my way through code, you can find me spending too much time on <a href={ randomYoutubeVid } onClick={() => setRandomNum(Math.floor(Math.random() * ytList.length))} className="youtube" target="_blank" rel="noreferrer">Youtube</a>, 
-                        pumping iron, stuffing my face or lurking in the <a href="https://bit.ly/CSESocDiscord" className="discord" target="_blank" rel="noreferrer">CSESoc Discord server</a>.
+                        stuffing my face or lurking in the <a href="https://bit.ly/CSESocDiscord" className="discord" target="_blank" rel="noreferrer">CSESoc Discord server</a>.
                     </Text>
                 </TextHolder>
             </InfoHolder>
