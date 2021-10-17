@@ -1,10 +1,9 @@
-import React from 'react'
 import { fadeIn, rollIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 
-const PageAnimation = keyframes`${fadeIn}`;
-const IdekAnimation = keyframes`${rollIn}`;
-const ProjectsContainer = styled.div`
+export const PageAnimation = keyframes`${fadeIn}`;
+export const IdekAnimation = keyframes`${rollIn}`;
+export const ProjectsContainer = styled.div`
     animation: 1s ${PageAnimation};
     display: flex;
     justify-content: center;
@@ -16,14 +15,3 @@ const ProjectsContainer = styled.div`
         animation: 2s ${IdekAnimation};
     }
 `;
-
-
-function Projects() {
-    return (
-        <ProjectsContainer>
-            <span>¯\_(ツ)_/¯</span>
-        </ProjectsContainer>
-    )
-}
-
-export default Projects

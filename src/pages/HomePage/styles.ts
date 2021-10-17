@@ -1,9 +1,7 @@
-import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Tb from '../assets/tb.jpg'
 import { tada, shake } from 'react-animations';
 
-const HomeContainer = styled.div`
+export const HomeContainer = styled.div`
     height: 100%;
     width: 100%;
     display: flex;
@@ -19,15 +17,15 @@ const HomeContainer = styled.div`
     }
 `;
 
-const ProfileAnimation = keyframes`${tada}`;
-const Profile = styled.img`
+export const ProfileAnimation = keyframes`${tada}`;
+export const Profile = styled.img`
     animation: 1.5s ${ProfileAnimation};
     border-radius: 50%;
     width: 240px;
     height: 240px;  
 `;
 
-const TextContainer = styled.div`
+export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
 
@@ -37,8 +35,8 @@ const TextContainer = styled.div`
 `; 
 
 
-const GreetingAnimation = keyframes`${shake}`;
-const Greeting = styled.h1`
+export const GreetingAnimation = keyframes`${shake}`;
+export const Greeting = styled.h1`
     animation: 1.5s ${GreetingAnimation};
     font-size: 128px;
     margin-block-start: 0.7em;
@@ -46,26 +44,11 @@ const Greeting = styled.h1`
     line-height: 17px;
 `;
 
-const Meme = styled.h2`
+export const Meme = styled.h2`
     font-size: 2rem;    
 `;
 
-const Info = styled.h2`
+export const Info = styled.h2`
     font-size: 1rem;
     color: #878e95;
 `;  
-
-function Home() {
-    return (
-        <HomeContainer>
-            <Profile src={Tb}/>
-            <TextContainer>
-                <Greeting>Hi!</Greeting>
-                <Meme>I'm Sunny</Meme>
-                <Info>CS @ UNSW</Info>
-            </TextContainer>
-        </HomeContainer>
-    )
-}
-
-export default Home
