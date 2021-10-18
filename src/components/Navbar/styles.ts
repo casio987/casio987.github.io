@@ -6,9 +6,8 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 50;   
 `;
 
 export const NavbarContainer = styled.div`
@@ -18,6 +17,12 @@ export const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
     max-width: 1500px;
+
+    @media (max-width: 750px) {
+        width: 100%;
+        font-size: 85%;
+        justify-content: center;
+    }
 `;
 
 export const NavbarMenu = styled.ul`
