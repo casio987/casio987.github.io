@@ -1,3 +1,4 @@
+import { Text } from "../Text/Text";
 import { Divider, ProjectCardContainer, ProjectImage, TextContainer } from "./styles";
 
 type ProjectCardProps = {
@@ -12,8 +13,8 @@ const ProjectCard = ({ img, titleText, bodyText} : ProjectCardProps) => {
       <ProjectImage src={img} />
       <Divider />
       <TextContainer>
-        <h1>{titleText}</h1>
-        <p>{bodyText}</p>
+        <Text fontSize="2rem">{titleText}</Text>
+        <Text fontSize="1.5rem">{bodyText}</Text>
       </TextContainer>
     </ProjectCardContainer>
   );

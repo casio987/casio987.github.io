@@ -9,13 +9,13 @@ export const ProjectCardContainer = styled.div`
   height: 17.25rem;
   border-radius: 3.125rem;
   border: 5px solid black;
-  padding: 3.375rem;
+  padding: 1rem;
   box-shadow: 0.5rem 0.5rem 0.25rem #C0C0C0;
 `;
 
 export const ProjectImage = styled.img`
-  width: 19.125rem;
-  height: 12.625rem;
+  width: 300px;
+  height: 200px;
 `;
 
 export const Divider = styled.div`

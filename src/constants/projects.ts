@@ -8,21 +8,21 @@ export const ProjectList: IProject[] = [
   {
     img: Tb,
     titleText: "Title",
-    bodyText: "Body",
+    bodyText: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus nunc. Maecenas",
   },
   {
     img: github,
     titleText: "Title",
-    bodyText: "Body",
+    bodyText: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus nunc. Maecenas",
   },
   {
     img: gmail,
     titleText: "Title",
-    bodyText: "Body",
+    bodyText: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus nunc. Maecenas",
   },
   {
     img: linkedin,
     titleText: "Title",
-    bodyText: "Body",
+    bodyText: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et maximus nunc. Maecenas",
   },
 ];

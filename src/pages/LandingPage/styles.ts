@@ -20,6 +20,7 @@ export const IconContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 20%;
+  margin: 2rem 0 5rem 0;
 `;
 
 export const ProjectListContainer = styled.div`
@@ -27,7 +28,7 @@ export const ProjectListContainer = styled.div`
   flex-direction: column;
   align-items: center;
   
-  & > *:not(:first-child) {
+  & > * {
     margin-top: 1.5rem;
   }
 
