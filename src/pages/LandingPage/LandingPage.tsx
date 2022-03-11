@@ -1,11 +1,11 @@
-import { IconContainer, PageContainer, ProfilePic } from "./styles";
+import { IconContainer, PageContainer, ProfilePic, ProjectListContainer } from "./styles";
 import Tb from "../../assets/tb.jpg";
 import Github from "../../assets/github.svg";
 import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import { ProjectList } from "../../constants/projects";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { ProjectCardContainer } from "../../components/ProjectCard/styles";
+import { Icon } from "../../components/Icon/Icon";
 
 const LandingPage = () => {
   const renderProjects = ProjectList.map(project => (
@@ -19,15 +19,15 @@ const LandingPage = () => {
   return (
     <PageContainer>
       <ProfilePic src={Tb} />
-      <h1>Sunny Wang</h1>
-      <h2>Intern @ Optus</h2>
+      <h1 style={{ fontSize: "64px" }}>Sunny Wang</h1>
+      <h2 style={{ fontSize: "36px" }}>Intern @ Optus</h2>
       <IconContainer>
-        <img src={Github} />
-        <img src={Gmail} />
-        <img src={Linkedin} />
+        <Icon src={Github} size={1.875}/>
+        <Icon src={Linkedin} size={1.875}/>
+        <Icon src={Gmail} size={1.875}/>
       </IconContainer>
-      <h2>About Me</h2>
-      <p style={{ textAlign: "center" }}>
+      <h2 style={{ fontSize: "64px" }}>About Me</h2>
+      <p style={{ textAlign: "center", fontSize: "24px" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Vivamus et maximus nunc. Maecenas sit amet posuere nibh, eu
         consectetur magna. Maecenas sagittis dignissim lacinia. Quisque 
@@ -35,10 +35,10 @@ const LandingPage = () => {
         sed fringilla quam porta et. Maecenas sapien turpis, aliquam et ex eget, 
         porttitor volutpat ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
       </p>
-      <h2>Projects</h2>
-      <ProjectCardContainer>
-        {/* {renderProjects} */}
-      </ProjectCardContainer>
+      <h2 style={{ fontSize: "64px" }}>Projects</h2>
+      <ProjectListContainer>
+        {renderProjects}
+      </ProjectListContainer>
     </PageContainer>
   )
 };

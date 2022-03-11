@@ -1,4 +1,4 @@
-import { Divider, ProjectCardContainer, ProjectImage } from "./styles";
+import { Divider, ProjectCardContainer, ProjectImage, TextContainer } from "./styles";
 
 type ProjectCardProps = {
   img: string;
@@ -11,8 +11,10 @@ const ProjectCard = ({ img, titleText, bodyText} : ProjectCardProps) => {
     <ProjectCardContainer>
       <ProjectImage src={img} />
       <Divider />
-      <h1>{titleText}</h1>
-      <p>{bodyText}</p>
+      <TextContainer>
+        <h1>{titleText}</h1>
+        <p>{bodyText}</p>
+      </TextContainer>
     </ProjectCardContainer>
   );
 };

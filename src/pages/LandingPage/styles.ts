@@ -9,9 +9,10 @@ export const PageContainer = styled.div`
 `;
 
 export const ProfilePic = styled.img`
-  width: 17.625rem;
-  height: 17.625rem;
+  width: 11rem;
+  height: 11rem;
   border-radius: 10rem;
+  box-shadow: 0.5rem 0.5rem 0.25rem #C0C0C0;
 `;
 
 export const IconContainer = styled.div`
@@ -23,5 +24,11 @@ export const IconContainer = styled.div`
 
 export const ProjectListContainer = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  align-items: center;
+  
+  & > *:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+
 `;
