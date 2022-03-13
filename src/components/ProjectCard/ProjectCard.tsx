@@ -13,7 +13,7 @@ const ProjectCard = ({ img, titleText, bodyText} : ProjectCardProps) => {
       <ProjectImage src={img} />
       <Divider />
       <TextContainer>
-        <Text fontSize="2rem">{titleText}</Text>
+        <Text fontSize="2rem" noMargin>{titleText}</Text>
         <Text fontSize="1.5rem">{bodyText}</Text>
       </TextContainer>
     </ProjectCardContainer>

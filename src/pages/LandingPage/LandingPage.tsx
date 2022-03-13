@@ -7,6 +7,7 @@ import { ProjectList } from "../../constants/projects";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Icon } from "../../components/Icon/Icon";
 import { Text } from "../../components/Text/Text";
+import Navbar from "../../components/Navbar/Navbar";
 
 const LandingPage = () => {
   const renderProjects = ProjectList.map(project => (
@@ -19,11 +20,12 @@ const LandingPage = () => {
 
   return (
     <PageContainer>
+      <Navbar /> 
       <ProfilePic src={Tb} />
       <Text
         fontSize="4rem"
         color="#2A2B2E"
-        style={{ margin: "1.875rem 0 1rem 0" }}
+        style={{ margin: "2.5rem 0 1rem 0" }}
       >
         Sunny Wang
       </Text>

@@ -9,8 +9,8 @@ export const PageContainer = styled.div`
 `;
 
 export const ProfilePic = styled.img`
-  width: 11rem;
-  height: 11rem;
+  width: 18.75rem;
+  height: 18.75rem;
   border-radius: 10rem;
   box-shadow: 0.5rem 0.5rem 0.25rem #C0C0C0;
 `;
@@ -19,7 +19,7 @@ export const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 20%;
+  width: 15%;
   margin: 2rem 0 5rem 0;
 `;
 

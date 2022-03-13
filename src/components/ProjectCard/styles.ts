@@ -14,8 +14,9 @@ export const ProjectCardContainer = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-  width: 300px;
+  width: 420px;
   height: 200px;
+  margin-right: 1rem;
 `;
 
 export const Divider = styled.div`

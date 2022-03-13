@@ -1,29 +1,20 @@
 import React from 'react';
-import { NavLink }  from 'react-router-dom';
-import { Nav, NavbarContainer, NavbarMenu, NavItem } from "./styles";
+import { LinkContainer, NavbarContainer } from "./styles";
 
-const Navbar = () => (
-    <Nav>
+const Navbar = () => {
+    const handleAboutClick = () => {
+        // TODO: add some smooth to link thingo
+    };
+
+    return (
         <NavbarContainer>
-            <NavbarMenu>
-                <NavItem>
-                    <NavLink exact to="/" activeClassName='active' className="norm">
-                        .home()
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink exact to="/about" activeClassName='active' className="norm">
-                        .about()
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink exact to="/projects" activeClassName='active' className="norm">
-                        .projects()
-                    </NavLink>
-                </NavItem>
-            </NavbarMenu>
+            <p>Home</p>
+            <LinkContainer>
+                <p>.about()</p>
+                <p>/</p>
+                <p>projects()</p>
+            </LinkContainer>
         </NavbarContainer>
-    </Nav>
-);
-
+    );
+};
 export default Navbar;
